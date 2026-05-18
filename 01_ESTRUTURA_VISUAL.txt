@@ -1,0 +1,155 @@
+================================================================================
+                      ESTRUTURA FINAL DE PASTAS
+              (Copie exatamente assim para seu computador)
+================================================================================
+
+seu-projeto-tce/
+│
+├── 📄 vercel.json                          ← vercel_atualizado.json (RENOMEAR)
+├── 📄 next.config.js
+├── 📄 tailwind.config.js
+├── 📄 postcss.config.js
+├── 📄 package.json
+├── 📄 requirements.txt
+├── 📄 config.py
+├── 📄 .env.example                         ← Copiar para .env.local
+│
+├── 📄 GUIA_SCRAPER_REAL.md                 ← DOCUMENTAÇÃO (Ler!)
+├── 📄 SQL_CRIAR_TABELAS_DOCUMENTOS.sql     ← Para Supabase
+│
+├── 📁 api/
+│   ├── 📄 busca_semanal.py                 ← api_busca_semanal.py (RENOMEAR)
+│   ├── 📄 monitoramento_diario.py          ← api_monitoramento_diario.py (RENOMEAR)
+│   └── 📄 scraping_documentos.py           ← api_scraping_documentos.py (RENOMEAR)
+│
+├── 📁 pages/
+│   ├── 📄 index.jsx                        ← pages_index.jsx (RENOMEAR)
+│   ├── 📄 _app.jsx                         ← pages__app.jsx (RENOMEAR)
+│   │
+│   └── 📁 api/
+│       ├── 📄 processos.js                 ← pages_api_processos.js (RENOMEAR)
+│       ├── 📄 monitorados.js               ← pages_api_monitorados.js (RENOMEAR)
+│       ├── 📄 historico.js                 ← pages_api_historico.js (RENOMEAR)
+│       └── 📄 documentos.js                ← pages_api_documentos.js (RENOMEAR)
+│
+├── 📁 components/
+│   └── 📄 DocumentosProcesso.jsx           ← components_DocumentosProcesso.jsx (RENOMEAR)
+│
+├── 📁 styles/
+│   └── 📄 globals.css                      ← styles_globals.css (RENOMEAR)
+│
+├── 📁 public/
+│   └── (Deixe vazio ou adicione imagens)
+│
+└── 📁 .next/                               ← Criado automaticamente
+
+================================================================================
+
+ARQUIVOS POR CATEGORIA:
+
+🔧 CONFIGURAÇÃO (8 arquivos):
+   vercel.json
+   next.config.js
+   tailwind.config.js
+   postcss.config.js
+   package.json
+   requirements.txt
+   config.py
+   .env.example
+
+🐍 BACKEND PYTHON (3 arquivos):
+   api/busca_semanal.py
+   api/monitoramento_diario.py
+   api/scraping_documentos.py
+
+⚛️  FRONTEND REACT (2 arquivos):
+   pages/index.jsx
+   pages/_app.jsx
+
+🔗 ENDPOINTS API (4 arquivos):
+   pages/api/processos.js
+   pages/api/monitorados.js
+   pages/api/historico.js
+   pages/api/documentos.js
+
+🎨 COMPONENTES (1 arquivo):
+   components/DocumentosProcesso.jsx
+
+🎭 ESTILOS (1 arquivo):
+   styles/globals.css
+
+📚 DOCUMENTAÇÃO (2 arquivos):
+   GUIA_SCRAPER_REAL.md
+   SQL_CRIAR_TABELAS_DOCUMENTOS.sql
+
+================================================================================
+
+COMO COPIAR:
+
+1. Crie a pasta raiz:
+   mkdir seu-projeto-tce
+   cd seu-projeto-tce
+
+2. Crie as subpastas:
+   mkdir -p api pages/api components styles public
+
+3. Copie os arquivos:
+
+   PARA A RAIZ:
+   - vercel_atualizado.json → vercel.json
+   - next.config.js
+   - tailwind.config.js
+   - postcss.config.js
+   - package.json
+   - requirements.txt
+   - config.py
+   - .env.example
+   - GUIA_SCRAPER_REAL.md
+   - SQL_CRIAR_TABELAS_DOCUMENTOS.sql
+
+   PARA api/:
+   - api_busca_semanal.py → busca_semanal.py
+   - api_monitoramento_diario.py → monitoramento_diario.py
+   - api_scraping_documentos.py → scraping_documentos.py
+
+   PARA pages/:
+   - pages_index.jsx → index.jsx
+   - pages__app.jsx → _app.jsx
+
+   PARA pages/api/:
+   - pages_api_processos.js → processos.js
+   - pages_api_monitorados.js → monitorados.js
+   - pages_api_historico.js → historico.js
+   - pages_api_documentos.js → documentos.js
+
+   PARA components/:
+   - components_DocumentosProcesso.jsx → DocumentosProcesso.jsx
+
+   PARA styles/:
+   - styles_globals.css → globals.css
+
+================================================================================
+
+✅ TOTAL: 22 ARQUIVOS
+
+Configuração: 8
+Backend: 3
+Frontend: 2
+API: 4
+Componentes: 1
+Estilos: 1
+Docs: 2
+Banco: 1
+
+================================================================================
+
+🚀 PRÓXIMO PASSO:
+
+1. npm install
+2. pip install -r requirements.txt
+3. cp .env.example .env.local
+4. Edite .env.local com credenciais Supabase
+5. Execute SQL no Supabase
+6. npm run dev
+
+================================================================================

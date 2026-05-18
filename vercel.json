@@ -1,0 +1,30 @@
+{
+  "buildCommand": "next build",
+  "devCommand": "next dev",
+  "installCommand": "pip install -r requirements.txt && npm install",
+  "outputDirectory": ".next",
+  
+  "crons": [
+    {
+      "path": "/api/busca_semanal",
+      "schedule": "0 9 * * 1",
+      "description": "Busca semanal de processos (Segunda 09:00)"
+    },
+    {
+      "path": "/api/monitoramento_diario",
+      "schedule": "0 8,18 * * *",
+      "description": "Monitoramento diário de movimentações (08:00 e 18:00)"
+    },
+    {
+      "path": "/api/scraping_documentos",
+      "schedule": "0 0 * * *",
+      "description": "Scraping de documentos (Diariamente 00:00 - Madrugada)"
+    }
+  ],
+  
+  "env": [
+    "SUPABASE_URL",
+    "SUPABASE_KEY",
+    "AMBIENTE"
+  ]
+}
